@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/inicio', [ContPAg::class, 'finicio'])->name('inicio');
+Route::get('/inicio/usuariosJ', [ContPAg::class, 'fusuariosJ'])->name('usuariosJ');
+Route::get('/inicio/ticketsJ', [ContPAg::class, 'fticketsJ'])->name('ticketsJ');
+Route::get('/inicio/depaJ', [ContPAg::class, 'fdepaJ'])->name('depaJ');
