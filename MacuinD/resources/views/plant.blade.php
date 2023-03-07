@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plantilla</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
@@ -20,10 +21,46 @@
         vertical-align: -.125em;
         fill: currentColor;
     }
+
+    .notie-container {
+      box-shadow: none;
+    }
 </style>
 
 
-<body style="background-color: #0abb21; padding-bottom: 85px;">
+<script>
+
+function ConfirmExit(){
+    notie.alert({ type: 3, text: '¡Adios!', time: 2 })
+}
+function ConfirmDepa(){
+    notie.alert({ type: 1, text: '¡Bienvenido!', time: 2 })
+}
+function ConfirmUsu(){
+    notie.alert({ type: 1, text: '¡Bienvenido!', time: 2 })
+}
+function ConfirmTick(){
+    notie.alert({ type: 1, text: '¡Bienvenido!', time: 2 })
+}
+
+function ConElim(){
+    notie.confirm({
+  text: String,
+  submitText: String, // optional, default = 'Yes'
+  cancelText: String, // optional, default = 'Cancel'
+  position: String, // optional, default = 'top', enum: ['top', 'bottom']
+  submitCallback: Function, // optional
+  cancelCallback: Function // optional
+}, submitCallbackOptional(), cancelCallbackOptional())
+
+}
+    
+</script>
+
+
+<body style="background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -58,13 +95,13 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Departamentos</a>
+                    <a class="nav-link {{ request()->routeIs('depaJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/usuariosJ" onclick="ConfirmDepa()">Departamentos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Usuarios</a>
+                    <a class="nav-link {{ request()->routeIs('usuariosJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/usuariosJ" onclick="ConfirmUsu()">Usuarios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Tickets</a>
+                    <a class="nav-link {{ request()->routeIs('ticketsJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/ticketsJ" onclick="ConfirmTick()">Tickets</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Reporte</a>
@@ -75,7 +112,7 @@
                 </li>
                 </ul>
             </div>
-            <button class="btn btn-outline-success" type="button"><a href="/">Salir</a></button>
+            <button class="btn btn-outline-success" type="button" onclick="ConfirmExit()"><a href="/">Salir</a></button>
         </div>
     </nav>
     @yield('cont')
@@ -85,7 +122,7 @@
             <a href="inicio" class="mb-3 me-2 mb-md-0 text-dark text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#clock"/></svg>
             </a>
-            <span class="mb-3 mb-md-0 text-dark">&copy; 2022 System Of Time, Inc</span>
+            <span class="mb-3 mb-md-0 text-dark">&copy; 2023 MacuinDashboards</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex p-2 {{request()->routeIS('NInicio')}}">
@@ -97,5 +134,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/notie"></script>
 </body>
 </html>

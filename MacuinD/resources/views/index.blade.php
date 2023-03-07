@@ -14,13 +14,6 @@
 
 
 </style>
-  @if(session()->has('confirm'))
-        {!! "<script> Swal.fire('Listo', 'Tu solicitud esta lista', 'succes') </script>" !!}
-        <div class="alert alert-primary alert-dimissible fade show text-center" role="alert">
-            <strong>{{session('confirm')}}</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    @endif
 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
         <symbol id="prov" viewBox="0 0 16 16">
@@ -37,17 +30,7 @@
             <svg class="bi" width="100" height="100"><use xlink:href="#prov"/></svg>
         </div>
 
-  @if($errors->any())
-  @foreach ($errors->all() as $error)
-      <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-          <strong>Datos Erroneos o Formulario Incompleto!!!</strong>{{$error}}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-  @endforeach
-@endif
-
-
-        <form method="" action="">
+        <form method="get" action="{{ route('inicio') }}">
             @csrf
             <div class="row g-3 align-items-center">
                 <div class="form-group">
@@ -61,9 +44,9 @@
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="text-center">
-                    <button type="submit" name="btnaddU" class="btn btn-dark m-3" href="{{ route('inicio') }}">Ingresar</button>
+                    <button type="submit" name="btnaddU" class="btn btn-dark m-3">Ingresar</button>
                 </div>
             </div>
         </form>
     </div>
- {{-- @stop  --}}
+ @stop 

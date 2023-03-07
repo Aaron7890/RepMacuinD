@@ -1,5 +1,5 @@
 @extends('plant')
-@section('contenido')
+@section('cont')
 <!DOCTYPE html>
 <html lang="en">
 <head>
