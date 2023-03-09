@@ -10,20 +10,20 @@
             <div class="table-title">
               <div class="row">
                   {{-- <div class="col-sm-8" style="color: #000066;"><h2>Departamentos</h2></div> --}}
-                  <div class="col-sm-4">  
                     <a href="/inicio">
                       <input class="btn btn-warning" type="submit" value="Salir" onclick="ConfirmExit()">
                   </a>
+                  <div class="col-sm-6">
                       <div class="search-box">
                       {{-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg> --}}
                           <input type="text" class="form-control" placeholder="Search&hellip;">
                       </div>
+                    </div>
                       <a href="/inicio/depaJ/addeditDepa">
                         <input class="btn btn-primary" type="submit" value="Agregar" onclick="Redirect()">
                       </a>
-                  </div>
               </div>
             </div>
 <table class="table table-sm table-dark">
