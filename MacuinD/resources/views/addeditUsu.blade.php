@@ -37,42 +37,42 @@
             <div class="row g-3 align-items-center">
                 <div class="form-group">
                     <label class="form-label text-light" >Nombre(s): </label>
-                    <input type="text" class="form-control" name="Nom" placeholder="Se solicita Nombre" value="">
+                    <input type="text" class="form-control" name="Nom" placeholder="Se solicita Nombre" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light" >Apellido Paterno: </label>
-                    <input type="text" class="form-control" name="ApP" placeholder="Se solicita Apellido Paterno" value="">
+                    <input type="text" class="form-control" name="ApP" placeholder="Se solicita Apellido Paterno" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light" >Apellido Materno: </label>
-                    <input type="text" class="form-control" name="ApM" placeholder="Se solicita Apellido Materno" value="">
+                    <input type="text" class="form-control" name="ApM" placeholder="Se solicita Apellido Materno" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light" >Matricula: </label>
-                    <input type="number" class="form-control" name="Mat" placeholder="Se solicita Matricula" value="">
+                    <input type="number" class="form-control" name="Mat" placeholder="Se solicita Matricula" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Puesto: </label>
-                    <input type="text" class="form-control" name="Puesto" placeholder="Se solicita Puesto" value="">
+                    <input type="text" class="form-control" name="Puesto" placeholder="Se solicita Puesto" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Correo: </label>
-                    <input type="text" class="form-control" name="Correo" placeholder="Se solicita Correp" value="">
+                    <input type="text" class="form-control" name="Correo" placeholder="Se solicita Correp" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Teléfono: </label>
-                    <input type="number" class="form-control" name="Tel" placeholder="Se solicita Teléfono" value="">
+                    <input type="number" class="form-control" name="Tel" placeholder="Se solicita Teléfono" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Contraseña: </label>
-                    <input type="text" class="form-control" name="Contraseña" placeholder="Se solicita Contraseña" value="">
+                    <input type="text" class="form-control" name="Contraseña" placeholder="Se solicita Contraseña" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="text-center">

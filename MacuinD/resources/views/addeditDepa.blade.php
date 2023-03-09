@@ -37,17 +37,17 @@
             <div class="row g-3 align-items-center">
                 <div class="form-group">
                     <label class="form-label text-light" >Departamento: </label>
-                    <input type="text" class="form-control" name="Depart" placeholder="Se solicita Nombre del Departamento" value="">
+                    <input type="text" class="form-control" name="Depart" placeholder="Se solicita Nombre del Departamento" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Jefe: </label>
-                    <input type="text" class="form-control" name="JefeD" placeholder="Se solicita Jefe del Departamento" value="">
+                    <input type="text" class="form-control" name="JefeD" placeholder="Se solicita Jefe del Departamento" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Integrantes: </label>
-                    <input type="text" class="form-control" name="IntDep" placeholder="Se solicita Total de Integrantes" value="">
+                    <input type="text" class="form-control" name="IntDep" placeholder="Se solicita Total de Integrantes" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="text-center">

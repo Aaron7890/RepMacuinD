@@ -36,12 +36,12 @@
             <div class="row g-3 align-items-center">
                 <div class="form-group">
                     <label class="form-label text-light" >Estatus: </label>
-                    <input type="text" class="form-control" name="Status" placeholder="Estado de la Solicitud" value="">
+                    <input type="text" class="form-control" name="Status" placeholder="Estado de la Solicitud" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Encargado: </label>
-                    <input type="text" class="form-control" name="Aux" placeholder="Quien se esta encargando" value="">
+                    <input type="text" class="form-control" name="Aux" placeholder="Quien se esta encargando" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">

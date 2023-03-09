@@ -37,16 +37,17 @@
             <div class="row g-3 align-items-center">
                 <div class="form-group">
                     <label class="form-label text-light" >Usuario: </label>
-                    <input type="text" class="form-control" name="Correo" placeholder="Se solicita Matricula" value="">
+                    <input type="text" class="form-control" name="Correo" placeholder="Se solicita Matricula" value="" required>
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="form-group">
                     <label class="form-label text-light">Contraseña: </label>
-                    <input type="password" class="form-control" name="Contraseña" placeholder="Se solicita Contraseña" value="">
+                    <input type="password" class="form-control" name="Contraseña" placeholder="Se solicita Contraseña" value="" required
+                    >
                     <p class="fv-bold text-danger"></p>
                 </div>
                 <div class="text-center">
-                    <button type="submit" name="btnaddU" class="btn btn-dark m-3">Ingresar</button>
+                    <button type="submit" name="btnaddU" class="btn btn-dark m-3" onclick="IngLog()">Ingresar</button>
                 </div>
             </div>
         </form>
