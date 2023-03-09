@@ -3,9 +3,13 @@
   <br>
   <div class="text-center"><h4>Consulta de Usuarios</h4></div>
   <br>
-  <button type="button" class="btn btn-warning" onclick="ConfirmExit()" href="/">Salir</button>
-  <button type="button" class="btn btn-primary" onclick="Redirect()" href="/inicio/usuariosJ/addeditUsu">Agregar</button>
   <div class="container"> /* EDITAR */
+    <a href="/inicio">
+      <input class="btn btn-warning" type="submit" value="Salir" onclick="ConfirmExit()">
+   </a>
+   <a href="/inicio/usuariosJ/addeditUsu">
+    <input class="btn btn-primary" type="submit" value="Agregar" onclick="Redirect()">
+  </a>
 <table class="table table-sm table-dark">
   <thead>
     <tr>
@@ -30,8 +34,8 @@
       <td>120036686@upq.edu.mx</td>
       <td>442 206 0131</td>
 <td>
-      <a href="" class="btn btn-primary" onclick="Redirect()" href="/inicio/usuariosJ/addeditUsu">Editar <i class="bi bi-percil"></i></a>
-      <a href="" class="btn btn-danger" onclick="ConElim()">Eliminar <i class="bi bi-percil"></i></a>
+      <a class="btn btn-primary" onclick="Redirect()" href="/inicio/usuariosJ/addeditUsu">Editar <i class="bi bi-percil"></i></a>
+      <a class="btn btn-danger" onclick="ConElim()">Eliminar <i class="bi bi-percil"></i></a>
 </td>
     </tr>
   </tbody>

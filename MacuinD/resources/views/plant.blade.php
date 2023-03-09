@@ -98,7 +98,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('depaJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/usuariosJ" onclick="ConfirmDepa()">Departamentos</a>
+                    <a class="nav-link {{ request()->routeIs('depaJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/depaJ" onclick="ConfirmDepa()">Departamentos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('usuariosJ') ?'text-warning ':'' }}" aria-current="page" href="/inicio/usuariosJ" onclick="ConfirmUsu()">Usuarios</a>
@@ -125,7 +125,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
             <a href="inicio" class="mb-3 me-2 mb-md-0 text-dark text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#clock"/></svg>
             </a>
-            <span class="mb-3 mb-md-0 text-dark">&copy; 2023 MacuinDashboards</span>
+            <span class="mb-3 mb-md-0 text-dark">&copy; 2023 MacuinDashboards, Emp</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex p-2 {{request()->routeIS('NInicio')}}">

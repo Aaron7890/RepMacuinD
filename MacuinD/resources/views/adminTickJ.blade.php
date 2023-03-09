@@ -3,9 +3,10 @@
   <br>
   <div class="text-center"><h4>Consulta de Tickets</h4></div>
   <br>
-  <button type="button" class="btn btn-warning" onclick="ConfirmExit()" href="/">Salir</button>
-  <button type="button" class="btn btn-primary" onclick="Redirect()" href="/inicio/depaJ/addeditTic">Agregar</button>
   <div class="container"> /* EDITAR */
+    <a href="/inicio">
+      <input class="btn btn-warning" type="submit" value="Salir" onclick="Redirect()">
+   </a>
 <table class="table table-sm table-dark">
   <thead>
     <tr>
@@ -26,8 +27,8 @@
       <td>Oscar</td>
       <td>Problemas con algo...</td>
 <td>
-      <a href="" class="btn btn-primary" onclick="Redirect()" href="/inicio/depaJ/addeditTic">Editar <i class="bi bi-percil"></i></a>
-      <a href="" class="btn btn-danger" onclick="ConElim()">Eliminar <i class="bi bi-percil"></i></a>
+      <a class="btn btn-primary" onclick="Redirect()" href="/inicio/ticketsJ/addeditTic">Editar <i class="bi bi-percil"></i></a>
+      <a class="btn btn-danger" onclick="ConElim()">Eliminar <i class="bi bi-percil"></i></a>
 </td>
     </tr>
   </tbody>
