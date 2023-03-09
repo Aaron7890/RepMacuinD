@@ -1,5 +1,5 @@
-@extends('plantAE')
-@section('contentido')  
+@extends('plant')
+@section('cont')  
 <h1 class="mt-4 display-1 text-center"></h1>
 <style>
     div.formxd{
