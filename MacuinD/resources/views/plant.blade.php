@@ -42,6 +42,9 @@ function ConfirmUsu(){
 function ConfirmTick(){
     notie.alert({ type: 1, text: '¡Bienvenido!', time: 2 })
 }
+function Redirect(){
+    notie.alert({ type: 4, text: 'Redireccionando', time: 2 })
+}
 
 function ConElim(){
     notie.confirm({

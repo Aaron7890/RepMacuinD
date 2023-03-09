@@ -21,4 +21,13 @@ class ContPAg extends Controller
     public function fdepaJ(){
         return view('adminDepaJ');
     }
+    public function fadetDepa(){
+        return view('addeditDepa');
+    }
+    public function fadetTic(){
+        return view('addeditTic');
+    }
+    public function fadetUsu(){
+        return view('addeditUsu');
+    }
 }

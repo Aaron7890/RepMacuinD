@@ -3,7 +3,9 @@
   <br>
   <div class="text-center"><h4>Consulta de Departamentos</h4></div>
   <br>
-  <div class="container">
+  <button type="button" class="btn btn-warning" onclick="ConfirmExit()" href="/">Salir</button>
+  <button type="button" class="btn btn-primary" onclick="Redirect()" href="/inicio/depaJ/addeditDepa">Agregar</button>
+  <div class="container"> /* EDITAR */
 <table class="table table-sm table-dark">
   <thead>
     <tr>
@@ -22,8 +24,8 @@
       <td>Oscar</td>
       <td>6</td>
 <td>
-      <a href="" class="btn btn-primary">Editar <i class="bi bi-percil"></i></a>
-      <a href="" class="btn btn-danger" onclick="confirm()">Eliminar <i class="bi bi-percil"></i></a>
+      <a href="" class="btn btn-primary" onclick="Redirect()" href="/inicio/depaJ/addeditDepa">Editar <i class="bi bi-percil"></i></a>
+      <a href="" class="btn btn-danger" onclick="ConElim()">Eliminar <i class="bi bi-percil"></i></a>
 </td>
     </tr>
   </tbody>
